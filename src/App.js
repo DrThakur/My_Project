@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./component/Header";
+import Home from "./component/Home";
+import Verilog from "./component/Verilog";
+import SystemVerilog from "./component/SystemVerilog";
+import UVM from "./component/UVM";
+import InterviewQuestions from "./component/InterviewQuestions";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter className="App">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="verilog/*" element={<Verilog />} />
+        <Route path="system/*" element={<SystemVerilog />} />
+        <Route path="uvm/*" element={<UVM />} />
+        <Route path="interview/*" element={<InterviewQuestions />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
