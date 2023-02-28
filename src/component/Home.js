@@ -2,14 +2,20 @@ import React from "react";
 import styled from "styled-components";
 // import Accordion from "./Accordion";
 import Cards from "./Cards";
+// import CardSection from "./CardSection";
+import Footer from "./Footer";
+import HeroSection from "./HeroSection";
 // import ImgSlider from "./ImageSlider";
 
 const Home = () => {
   return (
     <Container>
       {/* <Accordion /> */}
+      <HeroSection />
       <Cards />
+      {/* <CardSection /> */}
       {/* <ImgSlider /> */}
+      <Footer />
     </Container>
   );
 };
@@ -23,8 +29,8 @@ const Container = styled.div`
   overflow-x: hidden;
 
   &:before {
-    background: url("/images/home-background.png") center center / cover
-      no-repeat fixed;
+    // background: url("/images/home-background.png") center center / cover
+    //   no-repeat fixed;
     content: "";
     position: absolute;
     top: 0;

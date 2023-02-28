@@ -6,6 +6,7 @@ import Verilog from "./component/Verilog";
 import SystemVerilog from "./component/SystemVerilog";
 import UVM from "./component/UVM";
 import InterviewQuestions from "./component/InterviewQuestions";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="system/*" element={<SystemVerilog />} />
         <Route path="uvm/*" element={<UVM />} />
         <Route path="interview/*" element={<InterviewQuestions />} />
+        <Route path="contact/*" element={<Footer />} />
       </Routes>
     </BrowserRouter>
   );

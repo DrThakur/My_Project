@@ -22,6 +22,9 @@ const Header = () => {
         <Link to="interview">
           <span>Interview Question</span>
         </Link>
+        <Link to="contact">
+          <span>Contact Us</span>
+        </Link>
       </NavMenu>
     </Nav>
   );
